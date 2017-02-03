@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.jqzoom.js"></script>
+    <link rel="stylesheet" href="css/jqzoom.css">
+</head>
+<body>
+    <div id="content">
+        <a href="images/pro_img/blue_one_big.jpg" class="jqzoom" title="图片标题" style="margin: auto 50px;width: 600px">
+            <img src="images/pro_img/blue_one.jpg" alt="小图片标题" style="border: 1px solid #CCCCCC">
+        </a>
+    </div>
+<script>
+    $(function () {
+        $(".jqzoom").jqzoom({
+            zoomType:"reverse",
+            zoomWidth:300,
+            zoomHeight:250,
+            xOffset:10,
+            yOffset:0,
+            lens:true,
+            position:"right"
+        });
+    })
+</script>
+</body>
+</html>
